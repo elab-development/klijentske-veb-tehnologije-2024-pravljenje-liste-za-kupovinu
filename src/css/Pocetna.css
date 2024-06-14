@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  --primary: #264190;
+  --secondary: #ffffff;
+  --background: #f2f2f2;
+  list-style: none;
+}
+body {
+  margin: 0;
+}
+button{
+  background-color: var(--primary);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  text-align: center;
+  row-gap: 1rem;
+  background-color: var(--background);
+}
+.s21 {
+  grid-row: 1/3;
+  font-size: 70px;
+}
+.s22 {
+  font-size: 30px;
+  grid-row: 3/4;
+}
+.s23 {
+  grid-row: 4/5;
+}
+.whiteButton{
+  background-color: white;
+  color: var(--primary);
+  font-size: 20px;
+  width: 150px;
+  border-radius: 20px;
+}
+.s24 {
+  width: 100%;
+  height: auto;
+  grid-column: 2/3;
+  grid-row: 1/5;
+}
+.s24 img {
+  width: 100%;
+  height: auto;
+}
+.section3 {
+  display: flex;
+  justify-content: space-around;
+  
+}
+.section3Ch{
+  padding: 1rem;
+  border: 1px solid gray;
+border-radius: 10%;
+}
+.telefonMail{
+  display: grid;
+}
+.section4{
+  background-color: var(--background);
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+.section5{
+  background-image: url("../images/appleWallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 1000px;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+}
+.telefonMali{
+  display: grid;
+  padding: 0px 5px 10px 5px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: white;
+}
+.section6{
+  background-color: var(--background);
+}
+.nasiPartneri{
+  display: flex;
+  justify-content: space-around;
+padding: 20px;
+}
+.partneri{
+  padding: 2px;
+border: 3px solid white;
+border-radius: 10px;
+}
+.section7{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.slusalice{
+  width: 80%;
+  height: 90%;
+align-self: center;
+margin: auto;
+border-radius: 50px;
+overflow: hidden;
+  background-color: var(--primary);
+}
+.slusaliceSlika{
+  margin-bottom: 100px;
+}
+.textSlusalice{
+  height: 60%;
+  width: 90%;
+  border-radius: 50px;
+  justify-self: center;
+  align-self: center;
+  background-color: rgb(116, 217, 248);
+}
+.naslov{
+color: var(--primary);
+text-align: center;
+font-size: 50px;
+}
+.slusaliceText{
+color: var(--primary);
+padding: 30px;
+justify-content: center;
+/* align-self: center; */
+font-size: 30px;
+}

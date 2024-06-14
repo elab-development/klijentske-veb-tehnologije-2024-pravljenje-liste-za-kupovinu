@@ -1,0 +1,44 @@
+.menu {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background-color: var(--primary);
+  padding: 1rem;
+  a {
+    text-decoration: none;
+    color: var(--secondary);
+  }
+  a:hover {
+    color: rgb(0, 0, 0);
+  }
+}
+.meniPomocni {
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.meniPomocniPrvi {
+  color: var(--primary);
+  font-size: 30px;
+}
+.footerSecond{
+  display: flex;
+  justify-content: space-around;
+
+}
+.nazivListe{
+  font-size: 30px;
+  color: var(--primary);
+}
+.footer{
+  background-color: var(--background);
+  padding-bottom: 100px;
+}
+.drustveneMreze{
+  display: flex;
+gap: 20px
+}

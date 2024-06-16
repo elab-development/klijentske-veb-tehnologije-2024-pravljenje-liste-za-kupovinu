@@ -12,3 +12,15 @@
   margin: 5px auto 5px auto;
   height: 30px;
 }
+.naslovPrijava{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.checkbox{
+transform:scale(1);
+margin-top: 15px;
+}
+.agree{
+/* font-size: 15px; */
+    display: flex;
+}

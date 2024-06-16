@@ -12,15 +12,50 @@
   margin: 5px auto 5px auto;
   height: 30px;
 }
-.naslovPrijava{
-    font-size: 30px;
-    margin-bottom: 15px;
+.naslovPrijava {
+  font-size: 30px;
+  margin-bottom: 15px;
 }
-.checkbox{
-transform:scale(1);
-margin-top: 15px;
+.checkbox {
+  transform: scale(1);
+  margin-top: 15px;
 }
-.agree{
-/* font-size: 15px; */
-    display: flex;
+.agree {
+  /* font-size: 15px; */
+  display: flex;
+}
+.karticaKarijera {
+  padding: 30px;
+  width: 80%;
+  margin: auto;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+.karijeraNaslov {
+  padding: 0px;
+  margin-top: 0px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 40px;
+}
+.karticaText {
+  color: var(--primary);
+text-align: center;
+}
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+font-size: 25px;
+}
+.karticaSlika{
+margin: auto;
+}
+.vlatko{
+  font-weight: bold;
+  font-size: 30px;
 }

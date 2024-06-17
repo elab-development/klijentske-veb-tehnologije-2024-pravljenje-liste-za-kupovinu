@@ -39,7 +39,17 @@
   background-color: var(--background);
   padding-bottom: 100px;
 }
+.footerList{
+  display: grid;
+  gap: 10px;
+  color: var(--primary);
+  font-size: 20px;
+}
 .drustveneMreze{
   display: flex;
 gap: 20px
+}
+.copyRight{
+  text-align: center;
+  color: var(--primary);
 }

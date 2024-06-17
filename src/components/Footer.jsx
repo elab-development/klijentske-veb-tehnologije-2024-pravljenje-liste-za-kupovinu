@@ -17,7 +17,7 @@ export function Footer() {
         </li>
       </ul>
       <div className="footerSecond">
-        <ul>
+        <ul className="footerList">
           <li className="nazivListe">Brendovi</li>
           <li>Apple</li>
           <li>Samsung</li>
@@ -25,14 +25,14 @@ export function Footer() {
           <li>Honor</li>
           <li>Motorola</li>
         </ul>
-        <ul>
+        <ul className="footerList">
           <li className="nazivListe">Kontakt</li>
           <li>Live chat podrska</li>
           <li>Kontakt telefon</li>
           <li>Pisite nam na mejl</li>
           <li>Kontakt preko forme</li>
         </ul>
-        <ul>
+        <ul className="footerList">
           <li className="nazivListe">Korsnicki nalog</li>
           <li>Prijava</li>
           <li>Registracija</li>
@@ -40,6 +40,7 @@ export function Footer() {
           <li></li>
         </ul>
       </div>
+        <p className="copyRight">Copyright © 2024-2024TECH4U. Sva prava su zadrzana. Developed by TECH4U</p>
     </div>
   );
 }

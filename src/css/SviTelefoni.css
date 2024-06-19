@@ -1,0 +1,37 @@
+.filterBox{
+    background-color: rgb(224, 224, 224);
+    padding: 30px;
+    display: grid;
+    font-size: 20px;
+    gap: 10px;
+    border-radius: 20px;
+    border: 3px solid rgb(189, 189, 189);
+}
+.phonesAndFilter{
+    display: grid;
+    justify-content: center;
+    margin: 50px;
+    gap: 30px;
+    grid-template-columns: 1fr 4fr;
+}
+.filteriTitl{
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.polaSirina1{
+    grid-column: 1/2;
+}
+.polaSirina2{
+    grid-column: 2/3;
+}
+.sviBrendovi{
+    height: 100%;
+    width: 92%;
+    align-self: center;
+    text-align: center;
+    align-content: center;
+}
+.sviTelefoni{
+    background-color: red;
+}

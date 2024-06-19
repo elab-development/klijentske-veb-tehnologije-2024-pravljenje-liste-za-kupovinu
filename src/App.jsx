@@ -6,6 +6,7 @@ import { Prijava } from "./pages/Prijava";
 import { Registracija } from "./pages/Registracija";
 import { Karijera } from "./pages/Karijera";
 import { KontaktForm } from "./pages/KontaktForm";
+import { SviProizvodi } from "./pages/SviProizvodi";
 
 const router = createBrowserRouter([
   { path: "/", element: <Pocetna /> },
@@ -13,7 +14,10 @@ const router = createBrowserRouter([
   { path: "/registracija", element: <Registracija /> },
   { path: "/karijera", element: <Karijera /> },
   { path: "/kontaktform", element: <KontaktForm /> },
-  //NAPRAVI KORPU
+  //NAPRAVI KORP
+  { path: "/sviProizvodi", element: <SviProizvodi/> },
+  // napravi sve pojedinacne telefone
+  // { path: "/pojedinacni proizvodi", element: <KontaktForm /> },
   { path: "/korpa", element: <KontaktForm /> },
 ]);
 

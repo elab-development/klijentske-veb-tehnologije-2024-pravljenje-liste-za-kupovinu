@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <div className="footer">
       <ul className="meniPomocni">
-        <li className="meniPomocniPrvi">TECH4U</li>
+        <li className="meniPomocniPrvi"><a href="/">TECH4U</a></li>
         <li> </li>
         <li className="drustveneMreze">
           <img src={facebook} />
@@ -26,7 +26,7 @@ export function Footer() {
           <li>Motorola</li>
         </ul>
         <ul className="footerList">
-          <li className="nazivListe">Kontakt</li>
+          <li className="nazivListe"><a href="/kontaktForm">Kontakt</a></li>
           <li>Live chat podrska</li>
           <li>Kontakt telefon</li>
           <li>Pisite nam na mejl</li>
@@ -34,8 +34,8 @@ export function Footer() {
         </ul>
         <ul className="footerList">
           <li className="nazivListe">Korsnicki nalog</li>
-          <li>Prijava</li>
-          <li>Registracija</li>
+          <li><a href="/prijava">Prijava</a></li>
+          <li><a href="/registracija">Registracija</a></li>
           <li>Zaboravljena lozinka</li>
           <li></li>
         </ul>

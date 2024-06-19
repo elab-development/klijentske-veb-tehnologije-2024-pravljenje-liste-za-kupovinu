@@ -8,7 +8,7 @@ import motorolaLogo from "../images/motorolaLogo.png";
 export function NasiPartneri() {
   return (
     <div className="section6">
-      <p>Nasi partneri</p>
+      <p className="smallTitleText">Nasi partneri</p>
       <div className="nasiPartneri">
         <img src={samsungLogo} className="partneri"/>
         <img src={appleLogo} className="partneri"/>

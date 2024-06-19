@@ -61,8 +61,8 @@ export default function Pocetna() {
           karijeru
         </li>
       </ul>
+        <b className="smallTitleText">Najbolje prodavani uredjaji</b>
       <span className="section4">
-        <b>Najbolje prodavani uredjaji</b>
       </span>
       <NajprodavanijiUredjaji />
       <div className="section5">

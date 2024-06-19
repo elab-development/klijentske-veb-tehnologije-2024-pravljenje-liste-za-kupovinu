@@ -65,8 +65,8 @@ export default function Pocetna() {
         <b>Najbolje prodavani uredjaji</b>
       </span>
       <NajprodavanijiUredjaji />
-      <div className="section5" >
-       <p> Svi Apple uredjaji na jednom mestu</p>
+      <div className="section5">
+        <p> Svi Apple uredjaji na jednom mestu</p>
       </div>
       <NasiPartneri />
       <PocetnaZadnjaSekcija />

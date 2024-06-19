@@ -2,11 +2,12 @@
   box-sizing: border-box;
   --primary: #264190;
   --secondary: #ffffff;
-  --background: #f2f2f2;
+  --background: #f0f0f0;
   list-style: none;
 }
 body {
   margin: 0;
+  background-color: var(--background);
 }
 button{
   background-color: var(--primary);
@@ -54,6 +55,8 @@ button{
 .section3 {
   display: flex;
   justify-content: space-around;
+  padding: 50px;
+  background-color: var(--secondary);
   
 }
 .section3Ch{
@@ -65,7 +68,6 @@ border-radius: 10%;
   display: grid;
 }
 .section4{
-  background-color: var(--background);
   display: flex;
   gap: 4rem;
   justify-content: center;
@@ -104,6 +106,8 @@ border-radius: 10px;
 }
 .section7{
   display: grid;
+  padding: 50px;
+  background-color: var(--secondary);
   grid-template-columns: 1fr 1fr;
 }
 .slusalice{

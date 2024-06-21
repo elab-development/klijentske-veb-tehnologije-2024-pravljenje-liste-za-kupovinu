@@ -8,6 +8,7 @@ import "../css/Pocetna.css";
 import "../css/App.css";
 
 export default function Pocetna() {
+  
   return (
     <div className="desktop-1">
       <Meni />

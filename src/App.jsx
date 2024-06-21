@@ -7,6 +7,7 @@ import { Registracija } from "./pages/Registracija";
 import { Karijera } from "./pages/Karijera";
 import { KontaktForm } from "./pages/KontaktForm";
 import { SviProizvodi } from "./pages/SviProizvodi";
+import { Korpa } from "./pages/Korpa";
 
 const router = createBrowserRouter([
   { path: "/", element: <Pocetna /> },
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
   { path: "/sviProizvodi", element: <SviProizvodi/> },
   // napravi sve pojedinacne telefone
   // { path: "/pojedinacni proizvodi", element: <KontaktForm /> },
-  { path: "/korpa", element: <KontaktForm /> },
+  { path: "/korpa", element: <Korpa/> },
 ]);
 
 function App() {

@@ -1,5 +1,5 @@
 .kontaktForm {
-  background-image: url("../images/kontaktBackground.jpg");
+  background-image: url("../../public/images/kontaktBackground.jpg");
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

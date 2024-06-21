@@ -1,43 +1,51 @@
-    import { Footer } from "../components/Footer";
-    import { Meni } from "../components/Meni";
-    import { Meni2 } from "../components/Meni2";
-    import karijera from "../images/karijera.png";
-    import vlatko from "../images/vlatko.jpg";
+import { Footer } from "../components/Footer";
+import { Meni } from "../components/Meni";
+import { Meni2 } from "../components/Meni2";
 
-
-    export function Karijera() {
-    return (
-        <div>
-        <Meni />
-        <Meni2 />
-        <div className="karticaKarijera">
-            <p className="karijeraNaslov">Vazno je gde radite!</p>
-            <div className="grid2">
-            <p className="karticaText">
-                TECH4U veliku paznju posvecuje zaposlenima i omoguéava rad u
-                savremenom imodernom radnom okruzenju, pruzajuéi priliku za
-                karijerno usavravanje. Fokusirani smo na profesionalni razvojitimsku
-                angazovanost pojedinca.Podrzavamo razl¡icitostii pruzamo priliku za
-                uspeh. Negujemo dinamicnui bezbednu radnu atmosferu,timski rad,
-                podsticemo individualnost i kreiramo duh zajednistva, prepoznajuéci
-                ivrednujuéi rad zaposlenih.Zelimo da vam rad u TECH4U bude
-                zadovoljstvo, jer VAZNO JE GDE RADITE!
-            </p>
-            <img src={karijera} width="500px" className="karticaSlika"/>
-            </div>
+export function Karijera() {
+  return (
+    <div>
+      <Meni />
+      <Meni2 />
+      <div className="karticaKarijera">
+        <p className="karijeraNaslov">Važno je gde radite!</p>
+        <div className="grid2">
+          <p className="karticaText">
+            TECH4U veliku pažnju posvećuje zaposlenima i omogućava rad u
+            savremenom i modernom radnom okruženju, pružajući priliku za
+            karijerno usavršavanje. Fokusirani smo na profesionalni razvoj i
+            timsku angažovanost pojedinca. Podržavamo različitosti i pružamo
+            priliku za uspeh. Negujemo dinamičnu i bezbednu radnu atmosferu,
+            timski rad, podstičemo individualnost i kreiramo duh zajedništva,
+            prepoznajući i vrednujući rad zaposlenih. Želimo da vam rad u TECH4U
+            bude zadovoljstvo, jer VAŽNO JE GDE RADITE!
+          </p>
+          <img
+            src="/images/karijera.png"
+            width="500px"
+            className="karticaSlika"
+            alt="Karijera"
+          />
         </div>
-        <div className="karticaKarijera">
-            <p className="karijeraNaslov">Nasi zaposleni</p>
-            <div className="grid2">
-            <p className="karticaText">
-                <p className="vlatko">Vlatko Jovanovic</p>
-                Pametni telefoni su specijalnost naseg Vlatka Jovanovica. Od tipova ekrana, preko tipova senzora,kamera i procesora, pa sve do brojinih drugih tehnologija, Vlatku nista nije 
-                nepoznato.
-            </p>
-            <img src={vlatko} width="500px" className="karticaSlika"/>
-            </div>
+      </div>
+      <div className="karticaKarijera">
+        <p className="karijeraNaslov">Naši zaposleni</p>
+        <div className="grid2">
+          <p className="karticaText">
+            <strong>Vlatko Jovanović</strong> - Pametni telefoni su specijalnost
+            našeg Vlatka Jovanovića. Od tipova ekrana, preko tipova senzora,
+            kamera i procesora, pa sve do brojnih drugih tehnologija, Vlatku
+            ništa nije nepoznato.
+          </p>
+          <img
+            src="/images/vlatko.jpg"
+            width="500px"
+            className="karticaSlika"
+            alt="Vlatko Jovanović"
+          />
         </div>
-        <Footer />
-        </div>
-    );
-    }
+      </div>
+      <Footer />
+    </div>
+  );
+}

@@ -6,11 +6,7 @@ import { NasiPartneri } from "../components/NasiPartneri";
 import { PocetnaZadnjaSekcija } from "../components/PocetnaZadnjaSekcija";
 import "../css/Pocetna.css";
 import "../css/App.css";
-import section2Pocetna from "../images/section2Pocetna.png";
-import kamion from "../images/free-delivery.png";
-import brend from "../images/brand-image (1).png";
-import sat from "../images/24-hours.png";
-import promocija from "../images/promotion.png";
+
 export default function Pocetna() {
   return (
     <div className="desktop-1">
@@ -23,20 +19,28 @@ export default function Pocetna() {
           <button className="whiteButton">KUPI</button>
         </li>
         <li className="s24">
-          <img src={section2Pocetna} alt="nema" />
+          <img src="/images/section2Pocetna.png" alt="nema" />
         </li>
       </ul>
       <ul className="section3">
         <li className="section3Ch">
           <center>
-            <img src={kamion} className="icon" alt="nema" />
+            <img
+              src="/images/free-delivery.png"
+              className="icon"
+              alt="Besplatna dostava"
+            />
           </center>
           <br />
           Besplatna dostava
         </li>
         <li className="section3Ch">
           <center>
-            <img src={brend} className="icon" alt="nema" />
+            <img
+              src="/images/brand-image (1).png"
+              className="icon"
+              alt="Poznati brendovi"
+            />
           </center>
           Poznati
           <br />
@@ -44,7 +48,11 @@ export default function Pocetna() {
         </li>
         <li className="section3Ch">
           <center>
-            <img src={sat} className="icon" alt="nema" />
+            <img
+              src="/images/24-hours.png"
+              className="icon"
+              alt="24/7 podrška"
+            />
           </center>
           Online
           <br />
@@ -54,16 +62,19 @@ export default function Pocetna() {
         </li>
         <li className="section3Ch">
           <center>
-            <img src={promocija} className="icon" alt="nema" />
+            <img
+              src="/images/promotion.png"
+              className="icon"
+              alt="Šansa za karijeru"
+            />
           </center>
           Sansa za
           <br />
           karijeru
         </li>
       </ul>
-        <b className="smallTitleText">Najbolje prodavani uredjaji</b>
-      <span className="section4">
-      </span>
+      <b className="smallTitleText">Najbolje prodavani uredjaji</b>
+      <span className="section4"></span>
       <NajprodavanijiUredjaji />
       <div className="section5">
         <p> Svi Apple uredjaji na jednom mestu</p>

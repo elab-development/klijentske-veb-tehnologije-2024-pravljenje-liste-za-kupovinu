@@ -1,0 +1,7 @@
+.korpaPhones{
+    display: grid;
+    justify-content: center;
+    margin: 50px 150px 50px 150px;
+    gap: 30px;
+    grid-template-columns: repeat(5,1fr);
+}

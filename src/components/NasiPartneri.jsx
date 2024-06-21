@@ -1,20 +1,33 @@
-import samsungLogo from "../images/samsungLogo.webp";
-import appleLogo from "../images/appleLogo.webp";
-import xiaomiLogo from "../images/xiaomiLogo.webp";
-import honorLogo from "../images/HonorLogo.webp";
-import motorolaLogo from "../images/motorolaLogo.png";
-
-
 export function NasiPartneri() {
   return (
     <div className="section6">
-      <p className="smallTitleText">Nasi partneri</p>
+      <p className="smallTitleText">Naši partneri</p>
       <div className="nasiPartneri">
-        <img src={samsungLogo} className="partneri"/>
-        <img src={appleLogo} className="partneri"/>
-        <img src={xiaomiLogo} className="partneri"/>
-        <img src={honorLogo} className="partneri"/>
-        <img src={motorolaLogo} className="partneri"/>
+        <img
+          src="/images/samsungLogo.webp"
+          className="partneri"
+          alt="Samsung Logo"
+        />
+        <img
+          src="/images/appleLogo.webp"
+          className="partneri"
+          alt="Apple Logo"
+        />
+        <img
+          src="/images/xiaomiLogo.webp"
+          className="partneri"
+          alt="Xiaomi Logo"
+        />
+        <img
+          src="/images/HonorLogo.webp"
+          className="partneri"
+          alt="Honor Logo"
+        />
+        <img
+          src="/images/motorolaLogo.png"
+          className="partneri"
+          alt="Motorola Logo"
+        />
       </div>
     </div>
   );

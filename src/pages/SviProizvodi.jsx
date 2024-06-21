@@ -14,7 +14,7 @@ export function SviProizvodi() {
       <Meni2 />
       <p className="smallTitleText">Mobilni telefoni</p>
       <div className="phonesAndFilter">
-        <FiltersBox  setPrikazaniTelefoni={setPrikazaniTelefoni}/>
+        <FiltersBox   setPrikazaniTelefoni={setPrikazaniTelefoni}/>
         <SviTelefoni prikazaniTelefoni={prikazaniTelefoni} />
       </div>
       <img

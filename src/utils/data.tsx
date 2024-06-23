@@ -11,13 +11,13 @@ export const sviTelefoniniz = [
     image: "/images/samsungA72.png",
   },
   {
-    name: "Xiaomi Redmi Note 13 Pro",
+    name: "Xiaomi Redmi 13 Pro",
     price: "34999",
     image: "/images/redmi13.png",
   },
   {
     name: "iPhone 13 Mini",
-    price: "29999,",
+    price: "29999",
     image: "/images/iphone13Mini.jpg",
   },
   { name: "Honor 200 Pro", price: "149999", image: "/images/honor200pro.webp" },

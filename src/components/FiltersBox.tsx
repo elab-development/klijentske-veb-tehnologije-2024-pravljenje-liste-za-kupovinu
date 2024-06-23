@@ -17,6 +17,10 @@ export function FiltersBox({ setPrikazaniTelefoni }: FiltersBoxProps) {
     const filtriraniTelefoni = sviTelefoniniz.filter(phone => phone.name.includes(brend));
     setPrikazaniTelefoni(filtriraniTelefoni);
   };
+  const handlePrikazivanjeTelefonaPoCeni = (cena: number) => {
+    const filtriraniTelefoni = sviTelefoniniz.filter(phone => Number(phone.price)<cena);
+    setPrikazaniTelefoni(filtriraniTelefoni);
+  };
 
   return (
     <div className="filterBox">
@@ -54,10 +58,10 @@ export function FiltersBox({ setPrikazaniTelefoni }: FiltersBoxProps) {
         alt="Motorola"
       />
       <p className="polaSirina1">Cena</p>
-      <p className="partneri partneriSviTelefoni polaSirina1 sviBrendovi">Do 25.000 RSD</p>
-      <p className="partneri partneriSviTelefoni polaSirina2 sviBrendovi">Do 50.000 RSD</p>
-      <p className="partneri partneriSviTelefoni polaSirina1 sviBrendovi">Od 50.000 RSD</p>
-      <p className="partneri partneriSviTelefoni polaSirina2 sviBrendovi">Od 75.000 RSD</p>
+      <p className="partneri partneriSviTelefoni polaSirina1 sviBrendovi"onClick={() => handlePrikazivanjeTelefonaPoCeni(25000)} >Do 25.000 RSD</p>
+      <p className="partneri partneriSviTelefoni polaSirina2 sviBrendovi" onClick={() => handlePrikazivanjeTelefonaPoCeni(50000)} >Do 50.000 RSD</p>
+      <p className="partneri partneriSviTelefoni polaSirina1 sviBrendovi" onClick={() => handlePrikazivanjeTelefonaPoCeni(75000)}>Do 75.000 RSD</p>
+      <p className="partneri partneriSviTelefoni polaSirina2 sviBrendovi" onClick={() => handlePrikazivanjeTelefonaPoCeni(9999999)}>Max</p>
     </div>
   );
 }

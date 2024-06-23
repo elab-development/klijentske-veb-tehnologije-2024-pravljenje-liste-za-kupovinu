@@ -55,3 +55,9 @@ gap: 20px
   text-align: center;
   color: var(--primary);
 }
+.vratiNaPocetak{
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--primary);
+  text-decoration: underline;
+}

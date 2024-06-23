@@ -5,7 +5,8 @@ export function Footer() {
         <li className="meniPomocniPrvi">
           <a href="/">TECH4U</a>
         </li>
-        <li> </li>
+        <li onClick={handleClick} className="vratiNaPocetak">Vratite se na početak stranice  
+        </li>
         <li className="drustveneMreze">
           <a href="https://www.facebook.com" target="_blank">
             <img src="/images/facebook.png" alt="Facebook" />
@@ -56,4 +57,11 @@ export function Footer() {
       </p>
     </div>
   );
+}
+function handleClick(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0, 
+    behavior: "smooth" 
+  });
 }

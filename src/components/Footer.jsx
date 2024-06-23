@@ -7,10 +7,18 @@ export function Footer() {
         </li>
         <li> </li>
         <li className="drustveneMreze">
-          <img src="/images/facebook.png" alt="Facebook" />
-          <img src="/images/linkedin.png" alt="LinkedIn" />
-          <img src="/images/youtube2.png" alt="YouTube" />
-          <img src="/images/instagram.png" alt="Instagram" />
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="/images/facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="/images/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="https://www.youtube.com" target="_blank">
+            <img src="/images/youtube2.png" alt="YouTube" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="/images/instagram.png" alt="Instagram" />
+          </a>
         </li>
       </ul>
       <div className="footerSecond">

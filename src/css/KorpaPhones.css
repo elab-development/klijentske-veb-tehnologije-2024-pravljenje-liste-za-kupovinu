@@ -5,3 +5,31 @@
     gap: 30px;
     grid-template-columns: repeat(5,1fr);
 }
+.korpaIzbor{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.telefoniIzbor{
+display: grid;
+grid-template-columns: 1fr 1fr;
+justify-content: center;
+text-align: center;
+padding: 30px;
+gap: 10px;
+}
+.proizvodiUKorpi{
+    margin-left: 150px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.kanta{
+font-size: 50px;
+font-weight: bold;
+margin-left: auto;
+cursor: pointer;
+margin-right: 230px;
+}
+.titlIKanta{
+    display: flex;
+    /* justify-content: ; */
+}

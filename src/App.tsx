@@ -8,6 +8,9 @@ import { Karijera } from "./pages/Karijera";
 import { KontaktForm } from "./pages/KontaktForm";
 import { SviProizvodi } from "./pages/SviProizvodi";
 import { Korpa } from "./pages/Korpa";
+import { useState } from "react";
+import React from "react";
+import { TelefonData } from "./utils/data";
 
 const router = createBrowserRouter([
   { path: "/", element: <Pocetna /> },
@@ -15,16 +18,20 @@ const router = createBrowserRouter([
   { path: "/registracija", element: <Registracija /> },
   { path: "/karijera", element: <Karijera /> },
   { path: "/kontaktform", element: <KontaktForm /> },
-  //NAPRAVI KORP
   { path: "/sviProizvodi", element: <SviProizvodi/> },
-  // napravi sve pojedinacne telefone
-  // { path: "/pojedinacni proizvodi", element: <KontaktForm /> },
-  { path: "/korpa", element: <Korpa/> },
+  { path: "/korpa", element: <Korpa /> },
 ]);
 
 function App() {
-  
-  return <RouterProvider router={router} />;
+ 
+ const [korpaTelefoni, setKorpaTelefoni] = useState<TelefonData[]>([]);
+ const[elementsInCart,setElementsInCart]=useState(0);
+ const addToCart= () => {
+  setElementsInCart(elementsInCart + 1);
+};
+
+return <RouterProvider router={router} />;
 }
+
 
 export default App;

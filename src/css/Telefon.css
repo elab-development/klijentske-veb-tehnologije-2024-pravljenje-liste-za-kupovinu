@@ -18,3 +18,10 @@ margin: 5px;
     margin: 20px;
     border-radius: 20px;
 }
+.onHoverClick{
+  cursor:pointer ;
+  
+}
+.onHoverClick:hover{
+  background-color:#0040ff;
+}

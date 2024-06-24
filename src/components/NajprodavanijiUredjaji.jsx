@@ -1,32 +1,32 @@
-import { NajprodavanijiUredjaj } from "./NajprodavanijiUredjaj";
+import { Telefon } from "./Telefon";
 
 export function NajprodavanijiUredjaji() {
   return (
     <div className="section4">
-      <NajprodavanijiUredjaj
-        slika="/images/iphone14.jpg"
-        ime="iPhone 14 Pro Max"
-        cena="169.999,00 RSD"
+      <Telefon
+        name="iPhone 14"
+        image="/images/iphone14.jpg"
+        price="169999"
       />
-      <NajprodavanijiUredjaj
-        slika="/images/samsungA54.webp"
-        ime="Samsung Galaxy A54"
-        cena="59.999,00 RSD"
+      <Telefon
+        name="Samsung A54"
+        image="/images/samsungA54.webp"
+        price="59999"
       />
-      <NajprodavanijiUredjaj
-        slika="/images/samsungA72.png"
-        ime="Samsung Galaxy A72"
-        cena="49.999,00 RSD"
+      <Telefon
+        name="Samsung A72"
+        image="/images/samsungA72.png"
+        price="49999"
       />
-      <NajprodavanijiUredjaj
-        slika="/images/redmi13.png"
-        ime="Xiaomi Redmi Note 13 Pro"
-        cena="34.999,00 RSD"
+      <Telefon
+        name="Xiaomi 13 Pro"
+        image="/images/redmi13.png"
+        price="34999"
       />
-      <NajprodavanijiUredjaj
-        slika="/images/iphone13Mini.jpg"
-        ime="iPhone 13 Mini"
-        cena="29.999,00 RSD"
+      <Telefon
+        name="iPhone 13"
+        image="/images/iphone13Mini.jpg"
+        price="29999"
       />
     </div>
   );

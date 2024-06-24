@@ -59,5 +59,7 @@ gap: 20px
   font-size: 30px;
   cursor: pointer;
   color: var(--primary);
-  text-decoration: underline;
+}
+.pointer{
+  cursor: pointer;
 }

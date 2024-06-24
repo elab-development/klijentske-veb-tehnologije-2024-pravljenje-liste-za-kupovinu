@@ -9,7 +9,8 @@ export function Meni() {
       <li>Podrska: podrska@tech4u.rs</li>
       <li className='pointer'><span onClick={() => navigate('/karijera')}>Karijera</span></li>
       <li className='pointer'><span onClick={() => navigate('/kontaktform')}>Kontakt</span></li>
-      <li className='pointer'><span onClick={() => navigate('/korpa')}>Korpa</span></li>
+      <li className='pointer cartIcon'><span onClick={() => navigate('/korpa')}>&#x1F6D2;
+</span></li>
       <li className='pointer'><span onClick={() => navigate('/prijava')}>Prijava</span></li>
     </ul>
   );

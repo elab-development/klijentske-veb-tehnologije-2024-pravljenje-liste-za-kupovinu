@@ -30,11 +30,34 @@ export const sviTelefoniniz = [
   },
 ];
 
-export interface TelefonData {
+export class TelefonData {
   name: string;
   image: string;
   price: string;
-}
+    
+  }
+  export function formatPrice(price){
+    let priceString = price.toString();
+    
+    let formattedWholePart = priceString.slice(0, -3) + '.' + priceString.slice(-3);
+    
+    return `${formattedWholePart} RSD`;
+  }
+  class Telefon implements TelefonData {
+    name: string;
+    image: string;
+    price: string;
+  
+    constructor(name: string, image: string, price: string) {
+      this.name = name;
+      this.image = image;
+      this.price = price;
+    }
+  
+    ispisi(): void {
+      console.log(`${this.name}_${this.price}`);
+    }
+  }
 
 // Creating a context to share the state across components
 const KorpaContext = createContext<{
@@ -59,6 +82,8 @@ export const KorpaProvider: React.FC<KorpaProviderProps> = ({ children }) => {
     </KorpaContext.Provider>
   );
 };
+
+
 
 export const useKorpa = () => {
   const context = useContext(KorpaContext);

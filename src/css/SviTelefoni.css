@@ -54,3 +54,17 @@ gap: 20px;
     font-size: 25px;
     color: var(--primary);
 }
+.pagination{
+font-size: 25px;
+margin-top: 15px;
+}
+.bigButton{
+    font-size: 20px;
+    padding: 8px;
+border-radius: 6px;
+
+}
+.bigButton:hover{
+    background-color:#0040ff;
+    cursor: pointer;
+}

@@ -28,38 +28,41 @@ export const sviTelefoniniz = [
     price: "69999",
     image: "/images/MotorolaEdge50Pro.jpg",
   },
+  { name: "Samsung S21", price: "109999", image: "/images/samsungS21.jpg" },
+  { name: "Xiaomi Note 10", price: "19999", image: "/images/redmiNote10.jpg" },
+  { name: "iPhone 12", price: "99999", image: "/images/iphone12.jpg" },
+  { name: "Honor 50", price: "79999", image: "/images/honor50.jpg" },
+  { name: "Motorola G100", price: "89999", image: "/images/motorolaG100.jpg" },
 ];
 
 export class TelefonData {
   name: string;
   image: string;
   price: string;
-    
-  }
-  export function formatPrice(price){
-    let priceString = price.toString();
-    
-    let formattedWholePart = priceString.slice(0, -3) + '.' + priceString.slice(-3);
-    
-    return `${formattedWholePart} RSD`;
-  }
-  class Telefon implements TelefonData {
-    name: string;
-    image: string;
-    price: string;
-  
-    constructor(name: string, image: string, price: string) {
-      this.name = name;
-      this.image = image;
-      this.price = price;
-    }
-  
-    ispisi(): void {
-      console.log(`${this.name}_${this.price}`);
-    }
+}
+export function formatPrice(price) {
+  let priceString = price.toString();
+  let formattedWholePart =
+    priceString.slice(0, -3) + "." + priceString.slice(-3);
+
+  return `${formattedWholePart} RSD`;
+}
+class Telefon implements TelefonData {
+  name: string;
+  image: string;
+  price: string;
+
+  constructor(name: string, image: string, price: string) {
+    this.name = name;
+    this.image = image;
+    this.price = price;
   }
 
-// Creating a context to share the state across components
+  ispisi(): void {
+    console.log(`${this.name}_${this.price}`);
+  }
+}
+
 const KorpaContext = createContext<{
   korpaTelefoni: TelefonData[];
   setKorpaTelefoni: React.Dispatch<React.SetStateAction<TelefonData[]>>;
@@ -68,27 +71,31 @@ const KorpaContext = createContext<{
 } | null>(null);
 
 interface KorpaProviderProps {
-  children: ReactNode;  // Explicitly declaring that this component expects children
+  children: ReactNode;
 }
 
-// This component provides the cart state to its children
 export const KorpaProvider: React.FC<KorpaProviderProps> = ({ children }) => {
   const [korpaTelefoni, setKorpaTelefoni] = useState<TelefonData[]>([]);
   const [elementsInCart, setElementsInCart] = useState(0);
 
   return (
-    <KorpaContext.Provider value={{ korpaTelefoni, setKorpaTelefoni, elementsInCart, setElementsInCart }}>
+    <KorpaContext.Provider
+      value={{
+        korpaTelefoni,
+        setKorpaTelefoni,
+        elementsInCart,
+        setElementsInCart,
+      }}
+    >
       {children}
     </KorpaContext.Provider>
   );
 };
 
-
-
 export const useKorpa = () => {
   const context = useContext(KorpaContext);
   if (!context) {
-    throw new Error('useKorpa mora biti koriscena u KorpaProvider');
+    throw new Error("useKorpa mora biti koriscena u KorpaProvider");
   }
   return context;
 };

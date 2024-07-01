@@ -11,7 +11,7 @@ interface props {
 }
 
 export const Telefon: FC<props> = ({ name, image, price }) => {
-  const { setKorpaTelefoni, korpaTelefoni } = useKorpa(); // Get state management functions and state
+  const { setKorpaTelefoni, korpaTelefoni } = useKorpa();  
 
   return (
     <div className="prozorTelefon">

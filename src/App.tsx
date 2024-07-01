@@ -23,7 +23,6 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
- 
  const [korpaTelefoni, setKorpaTelefoni] = useState<TelefonData[]>([]);
  const[elementsInCart,setElementsInCart]=useState(0);
  const addToCart= () => {

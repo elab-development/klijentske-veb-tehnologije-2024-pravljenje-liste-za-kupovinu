@@ -9,7 +9,7 @@ import "../css/App.css";
 import { useNavigate } from "react-router-dom";
 
 export default function Pocetna() {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="desktop-1">
       <Meni />
@@ -18,7 +18,12 @@ export default function Pocetna() {
         <li className="s21">Predji na iPhone 15</li>
         <li className="s22">Zameni svoj iPhone i ostvari dodatni popust!</li>
         <li className="s23">
-          <button onClick={() => navigate('/sviproizvodi')} className="pointer whiteButton">KUPI</button>
+          <button
+            onClick={() => navigate("/sviproizvodi")}
+            className="pointer whiteButton"
+          >
+            KUPI
+          </button>
         </li>
         <li className="s24">
           <img src="/images/section2Pocetna.png" alt="nema" />

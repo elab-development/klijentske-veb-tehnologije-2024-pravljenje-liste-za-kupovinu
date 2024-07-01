@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import "../css/PrijavaForm.css";
 
 export function PrijavaForm() {
-  const navigate = useNavigate(); // Hook to get the navigate function
+  const navigate = useNavigate();
 
   return (
     <div className="PrijavaForm">

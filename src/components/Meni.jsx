@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 
 export function Meni() {
-  const navigate = useNavigate();  // Hook to get the navigate function
+  const navigate = useNavigate(); 
 
   return (
     <ul className="menu" id="header">

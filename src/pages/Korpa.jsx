@@ -2,11 +2,11 @@ import { Footer } from "../components/Footer";
 import { Meni } from "../components/Meni";
 import { Meni2 } from "../components/Meni2";
 import { Telefon } from "../components/Telefon";
-import { sviTelefoniniz, useKorpa } from "../utils/data"; // Import the custom hook
+import { sviTelefoniniz, useKorpa } from "../utils/data";
 import "../css/KorpaPhones.css";
 
 export function Korpa() {
-  const { setKorpaTelefoni, korpaTelefoni } = useKorpa(); // Use the custom hook to get the current state of the cart
+  const { setKorpaTelefoni, korpaTelefoni } = useKorpa(); 
 
   return (
     <div>

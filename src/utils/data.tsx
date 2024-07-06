@@ -99,3 +99,27 @@ export const useKorpa = () => {
   }
   return context;
 };
+
+export interface IKontaktFormData {
+  ime: string;
+  prezime: string;
+  email: string;
+  brojTelefona: string;
+  pitanje: string;
+}
+
+export class KontaktFormData implements IKontaktFormData {
+  ime: string;
+  prezime: string;
+  email: string;
+  brojTelefona: string;
+  pitanje: string;
+
+  constructor(ime: string, prezime: string, email: string, brojTelefona: string, pitanje: string) {
+    this.ime = ime;
+    this.prezime = prezime;
+    this.email = email;
+    this.brojTelefona = brojTelefona;
+    this.pitanje = pitanje;
+  }
+}

@@ -10,6 +10,13 @@ export function KontaktForma() {
     setFormData({ ...formData, [name]: value });
   };
 
+  const handleSubmit = () => {
+if(formData.ime&&formData.brojTelefona&&formData.email&&formData.prezime&&formData.pitanje){
+    alert("Forma je uspesno izvrsena!");
+    window.location.reload();
+  }
+  else{alert("Morate uneti sve podatke i pitanje! ")}
+  };
 
   return (
     <div className="kontaktForm">
@@ -57,7 +64,7 @@ export function KontaktForma() {
           className="pitanjeInput"
         ></textarea>
       </div>
-      <button className="kontaktButton" >Posaljite poruku</button>
+      <button className="kontaktButton" onClick={handleSubmit}>Posaljite poruku</button>
     </div>
   );
 }
